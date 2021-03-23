@@ -1,4 +1,7 @@
-//
+// Student ID: 153803184
+// Student name: Valentina Derksen
+// Updates on March 23, 2021
+
 //  AppDelegate.swift
 //  ValentinaDerksen_MyOrder
 //

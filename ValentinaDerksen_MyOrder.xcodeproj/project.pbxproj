@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		35D4A24925DE1AC00027A210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4A24825DE1AC00027A210 /* AppDelegate.swift */; };
 		35D4A24B25DE1AC00027A210 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4A24A25DE1AC00027A210 /* SceneDelegate.swift */; };
-		35D4A24D25DE1AC00027A210 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4A24C25DE1AC00027A210 /* ViewController.swift */; };
 		35D4A25025DE1AC00027A210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D4A24E25DE1AC00027A210 /* Main.storyboard */; };
 		35D4A25225DE1ACC0027A210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D4A25125DE1ACC0027A210 /* Assets.xcassets */; };
 		35D4A25525DE1ACC0027A210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D4A25325DE1ACC0027A210 /* LaunchScreen.storyboard */; };
+		35D4A25F25DE218E0027A210 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4A25E25DE218E0027A210 /* AddOrderViewController.swift */; };
+		35D4A26525DE2C090027A210 /* AllOrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4A26425DE2C090027A210 /* AllOrdersTableViewController.swift */; };
+		35D4A27B25E0C4D20027A210 /* OrderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4A27A25E0C4D20027A210 /* OrderViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35D4A24525DE1AC00027A210 /* ValentinaDerksen_MyOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValentinaDerksen_MyOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D4A24825DE1AC00027A210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D4A24A25DE1AC00027A210 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		35D4A24C25DE1AC00027A210 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35D4A24F25DE1AC00027A210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35D4A25125DE1ACC0027A210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35D4A25425DE1ACC0027A210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35D4A25625DE1ACC0027A210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35D4A25E25DE218E0027A210 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
+		35D4A26425DE2C090027A210 /* AllOrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOrdersTableViewController.swift; sourceTree = "<group>"; };
+		35D4A27A25E0C4D20027A210 /* OrderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				35D4A24825DE1AC00027A210 /* AppDelegate.swift */,
 				35D4A24A25DE1AC00027A210 /* SceneDelegate.swift */,
-				35D4A24C25DE1AC00027A210 /* ViewController.swift */,
 				35D4A24E25DE1AC00027A210 /* Main.storyboard */,
 				35D4A25125DE1ACC0027A210 /* Assets.xcassets */,
 				35D4A25325DE1ACC0027A210 /* LaunchScreen.storyboard */,
 				35D4A25625DE1ACC0027A210 /* Info.plist */,
+				35D4A25E25DE218E0027A210 /* AddOrderViewController.swift */,
+				35D4A26425DE2C090027A210 /* AllOrdersTableViewController.swift */,
+				35D4A27A25E0C4D20027A210 /* OrderViewCell.swift */,
 			);
 			path = ValentinaDerksen_MyOrder;
 			sourceTree = "<group>";
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35D4A24D25DE1AC00027A210 /* ViewController.swift in Sources */,
 				35D4A24925DE1AC00027A210 /* AppDelegate.swift in Sources */,
+				35D4A27B25E0C4D20027A210 /* OrderViewCell.swift in Sources */,
 				35D4A24B25DE1AC00027A210 /* SceneDelegate.swift in Sources */,
+				35D4A25F25DE218E0027A210 /* AddOrderViewController.swift in Sources */,
+				35D4A26525DE2C090027A210 /* AllOrdersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7KS7HKXC7;
 				INFOPLIST_FILE = ValentinaDerksen_MyOrder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7KS7HKXC7;
 				INFOPLIST_FILE = ValentinaDerksen_MyOrder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
