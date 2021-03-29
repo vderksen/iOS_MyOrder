@@ -1,5 +1,6 @@
 // Student ID: 153803184
 // Student name: Valentina Derksen
+// Upated: 2021-03-29
 
 //  OrderViewCell.swift
 //  ValentinaDerksen_MyOrder
@@ -9,9 +10,11 @@
 
 import UIKit
 
-class OrderViewCell: UITableViewCell {
+class OrderCell: UITableViewCell {
     
-    @IBOutlet var lblOrder : UILabel!
+    @IBOutlet var lblOrderType : UILabel!
+    @IBOutlet var lblOrderSize : UILabel!
+    @IBOutlet var lblOrderQuantity : UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

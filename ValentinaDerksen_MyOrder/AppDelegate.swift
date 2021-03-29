@@ -1,6 +1,6 @@
 // Student ID: 153803184
 // Student name: Valentina Derksen
-// Updates on March 23, 2021
+// Upated: 2021-03-29
 
 //  AppDelegate.swift
 //  ValentinaDerksen_MyOrder
@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,6 +33,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    // Core Data
+    lazy var persistentConteiner : NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "OrderModel")
+        container.loadPersistentStores(completionHandler: {(storeDescription, error) in
+            if let error = error as NSError? {
+               // fatalError("Unresolved error \(error)")
+                print("Unresolved error \(error)")
+            }
+        })
+        return container
+    }()
+    
+    // Core Data Saving support
+    func saveContex(){
+        let contex = persistentConteiner.viewContext
+        
+        if contex.hasChanges {
+            do{
+                try contex.save()
+            }catch{
+                let nserror = error as NSError
+                // fatalError("Unresolved error \(nserror)")
+                 print("Unresolved error \(nserror)")
+            }
+        }
     }
 
 

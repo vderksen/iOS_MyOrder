@@ -112,29 +112,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderCell" rowHeight="78" id="330-e0-UR7" customClass="OrderViewCell" customModule="ValentinaDerksen_MyOrder" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="78"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Ch1-GF-YNC" customClass="OrderCell" customModule="ValentinaDerksen_MyOrder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="73.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="330-e0-UR7" id="Jgy-xj-aCK">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ch1-GF-YNC" id="UyJ-ib-9p1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="73.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOY-tW-qIP">
-                                            <rect key="frame" x="30" y="27" width="354" height="24"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Coffee Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvn-ia-NVE">
+                                            <rect key="frame" x="42" y="26" width="99" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coffee Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqc-ce-eIC">
+                                            <rect key="frame" x="178" y="26" width="88" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qunatity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Se1-Q0-53i">
+                                            <rect key="frame" x="309" y="26" width="65" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="YOY-tW-qIP" secondAttribute="bottom" constant="16" id="7If-r6-2s9"/>
-                                        <constraint firstItem="YOY-tW-qIP" firstAttribute="top" secondItem="Jgy-xj-aCK" secondAttribute="topMargin" constant="16" id="E0N-My-t3n"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="YOY-tW-qIP" secondAttribute="trailing" constant="10" id="Hr8-F1-IAd"/>
-                                        <constraint firstItem="YOY-tW-qIP" firstAttribute="leading" secondItem="Jgy-xj-aCK" secondAttribute="leadingMargin" constant="10" id="OfZ-wc-cgZ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Se1-Q0-53i" secondAttribute="trailing" constant="20" id="COS-BU-TN1"/>
+                                        <constraint firstItem="kvn-ia-NVE" firstAttribute="top" secondItem="UyJ-ib-9p1" secondAttribute="topMargin" constant="15" id="T8O-b6-IDY"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="kvn-ia-NVE" secondAttribute="trailing" constant="40" id="Y97-5l-t8q"/>
+                                        <constraint firstItem="kvn-ia-NVE" firstAttribute="leading" secondItem="UyJ-ib-9p1" secondAttribute="leadingMargin" constant="20" id="eC5-J9-APH"/>
+                                        <constraint firstItem="Se1-Q0-53i" firstAttribute="top" secondItem="UyJ-ib-9p1" secondAttribute="topMargin" constant="15" id="f4h-qm-SuG"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Se1-Q0-53i" secondAttribute="bottom" constant="15" id="vpN-PC-q2k"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="kvn-ia-NVE" secondAttribute="bottom" constant="15" id="wck-dM-e2P"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="lblOrder" destination="YOY-tW-qIP" id="722-Gm-SxM"/>
+                                    <outlet property="lblOrderQuantity" destination="Se1-Q0-53i" id="BBz-Fj-GzV"/>
+                                    <outlet property="lblOrderSize" destination="lqc-ce-eIC" id="Ufr-br-ePg"/>
+                                    <outlet property="lblOrderType" destination="kvn-ia-NVE" id="uxo-Hn-W75"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -1,5 +1,6 @@
 // Student ID: 153803184
 // Student name: Valentina Derksen
+// Upated: 2021-03-29
 
 //  AddOrderViewController.swift
 //  ValentinaDerksen_MyOrder
@@ -19,7 +20,8 @@ class AddOrderViewController: UIViewController {
     let cofeeTypes = ["Americano", "Cappuccino", "Latte", "Mocca", "Espresso"]
     
     // an array of added single orders
-    var orderList = [String]()
+    private var orderList : [Order] = [Order]()
+    private let dbHelper = DatabaseHelper.getInstance()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,36 +34,23 @@ class AddOrderViewController: UIViewController {
     // take user inputs and add a single order to the array of orders
     @IBAction func addOrder(){
         
-        var type : String = ""
-        var size : String = ""
-        var quantity : Int = 0
-        var order : String = ""
+        var type1 : String = ""
+        var size1 : String = ""
+        var quantity1 : Int = 0
         
         if (tfQuantity.text != "") {
-            quantity = Int(tfQuantity.text!) ?? 0
-            size = self.segSize.titleForSegment(at: self.segSize.selectedSegmentIndex)!
-            type = self.cofeeTypes[self.pkrType.selectedRow(inComponent: 0)]
-            print(#function, "Order: \(quantity) \(size) \(type)")
+            quantity1 = Int(tfQuantity.text!) ?? 0
+            size1 = self.segSize.titleForSegment(at: self.segSize.selectedSegmentIndex)!
+            type1 = self.cofeeTypes[self.pkrType.selectedRow(inComponent: 0)]
             
-            // save user input for a single order as a String
-            order = String("\(quantity) \(size) \(type)")
-            print(order)
-            
-            // add single order to an array of orders
-            orderList.append(order)
-            print(orderList)
+            let newOrder = CofeeOrder(type: type1, size: size1, quantity: quantity1)
+            self.dbHelper.insertOrder(order: newOrder)
         }
     }
     
     // set up segue Navigation to AllOrdersTableViewController
     @IBAction func viewOrders(_sender: Any){
         performSegue(withIdentifier: "segueAllOrders", sender: self)
-    }
- 
-    // and pass array of added orders to AllOrdersTableViewController
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destVC = segue.destination as! AllOrdersTableViewController
-        destVC.orderCellList = self.orderList
     }
 
 }

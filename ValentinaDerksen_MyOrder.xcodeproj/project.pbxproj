@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352815A22610351100A7C816 /* OrderModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 352815A02610351100A7C816 /* OrderModel.xcdatamodeld */; };
+		352815A82610394300A7C816 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352815A72610394300A7C816 /* DatabaseHelper.swift */; };
+		352815AC26103B5400A7C816 /* CofeeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352815AB26103B5400A7C816 /* CofeeOrder.swift */; };
 		35D4A24925DE1AC00027A210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4A24825DE1AC00027A210 /* AppDelegate.swift */; };
 		35D4A24B25DE1AC00027A210 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4A24A25DE1AC00027A210 /* SceneDelegate.swift */; };
 		35D4A25025DE1AC00027A210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D4A24E25DE1AC00027A210 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		352815A12610351100A7C816 /* OrderModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrderModel.xcdatamodel; sourceTree = "<group>"; };
+		352815A72610394300A7C816 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		352815AB26103B5400A7C816 /* CofeeOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CofeeOrder.swift; sourceTree = "<group>"; };
 		35D4A24525DE1AC00027A210 /* ValentinaDerksen_MyOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValentinaDerksen_MyOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D4A24825DE1AC00027A210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D4A24A25DE1AC00027A210 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352815A42610389300A7C816 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				352815AB26103B5400A7C816 /* CofeeOrder.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		352815A52610389A00A7C816 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				352815A72610394300A7C816 /* DatabaseHelper.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		352815A6261038A300A7C816 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				35D4A25E25DE218E0027A210 /* AddOrderViewController.swift */,
+				35D4A26425DE2C090027A210 /* AllOrdersTableViewController.swift */,
+				35D4A27A25E0C4D20027A210 /* OrderViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		35D4A23C25DE1AC00027A210 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +92,16 @@
 		35D4A24725DE1AC00027A210 /* ValentinaDerksen_MyOrder */ = {
 			isa = PBXGroup;
 			children = (
+				352815A6261038A300A7C816 /* views */,
+				352815A52610389A00A7C816 /* controllers */,
+				352815A42610389300A7C816 /* models */,
 				35D4A24825DE1AC00027A210 /* AppDelegate.swift */,
 				35D4A24A25DE1AC00027A210 /* SceneDelegate.swift */,
 				35D4A24E25DE1AC00027A210 /* Main.storyboard */,
 				35D4A25125DE1ACC0027A210 /* Assets.xcassets */,
 				35D4A25325DE1ACC0027A210 /* LaunchScreen.storyboard */,
 				35D4A25625DE1ACC0027A210 /* Info.plist */,
-				35D4A25E25DE218E0027A210 /* AddOrderViewController.swift */,
-				35D4A26425DE2C090027A210 /* AllOrdersTableViewController.swift */,
-				35D4A27A25E0C4D20027A210 /* OrderViewCell.swift */,
+				352815A02610351100A7C816 /* OrderModel.xcdatamodeld */,
 			);
 			path = ValentinaDerksen_MyOrder;
 			sourceTree = "<group>";
@@ -144,9 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				35D4A24925DE1AC00027A210 /* AppDelegate.swift in Sources */,
+				352815AC26103B5400A7C816 /* CofeeOrder.swift in Sources */,
 				35D4A27B25E0C4D20027A210 /* OrderViewCell.swift in Sources */,
 				35D4A24B25DE1AC00027A210 /* SceneDelegate.swift in Sources */,
+				352815A82610394300A7C816 /* DatabaseHelper.swift in Sources */,
 				35D4A25F25DE218E0027A210 /* AddOrderViewController.swift in Sources */,
+				352815A22610351100A7C816 /* OrderModel.xcdatamodeld in Sources */,
 				35D4A26525DE2C090027A210 /* AllOrdersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +387,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		352815A02610351100A7C816 /* OrderModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				352815A12610351100A7C816 /* OrderModel.xcdatamodel */,
+			);
+			currentVersion = 352815A12610351100A7C816 /* OrderModel.xcdatamodel */;
+			path = OrderModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 35D4A23D25DE1AC00027A210 /* Project object */;
 }
