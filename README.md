@@ -1,5 +1,5 @@
 # iOS_MyOrder
-iOS_MyOrder app allows the user to choose the details of their orders, store them in persistent storage and display the list of placed orders on the second screen. </br>
+iOS_MyOrder app allows the user to choose the details of their orders, store them in persistent storage and display the list of placed orders on the second screen. </br></br>
 CoreData is used to save the application’s permanent data. Also, the user can edit order quantity and delete orders from the list.
 
 #
