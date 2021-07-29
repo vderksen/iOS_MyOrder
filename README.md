@@ -5,3 +5,5 @@ CoreData is used to save the application’s permanent data. Also, the user can 
 #
 <a href="https://drive.google.com/file/d/1t0wP8UCEtCdMGYscyCBOdEZiwX9htgWd/view?usp=sharing" target="_blank">Demo video</a>
 
+[go](https://drive.google.com/file/d/1t0wP8UCEtCdMGYscyCBOdEZiwX9htgWd/view?usp=sharing){:target="_blank" rel="noopener"}
+
